@@ -13,7 +13,7 @@
         <scene sceneID="gX5-MZ-Me2">
             <objects>
                 <navigationController id="jtR-l0-5RT" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" backIndicatorImage="Back" id="LTm-E2-VGX">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="LTm-E2-VGX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -28,7 +28,7 @@
         <!--Oblique Advice-->
         <scene sceneID="0jD-D3-Tqv">
             <objects>
-                <viewController id="3qQ-Ck-4Vo" sceneMemberID="viewController">
+                <viewController id="3qQ-Ck-4Vo" customClass="ViewController" customModule="Oblique_Advice" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="e9j-yH-tst"/>
                         <viewControllerLayoutGuide type="bottom" id="tMG-L9-hdr"/>
@@ -36,7 +36,25 @@
                     <view key="view" contentMode="scaleToFill" id="iSk-OV-q0u">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RBt-eO-t0i">
+                                <rect key="frame" x="164" y="176" width="64" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Register"/>
+                                <connections>
+                                    <action selector="regLocalButtonPressed:" destination="3qQ-Ck-4Vo" eventType="touchUpInside" id="z0A-0t-ga5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WJY-Iz-jzc">
+                                <rect key="frame" x="164" y="221" width="71" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Schedule"/>
+                                <connections>
+                                    <action selector="schedLocalButtonPressed:" destination="3qQ-Ck-4Vo" eventType="touchUpInside" id="Ypr-IB-laG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Oblique Advice" id="f9c-Tb-ZXh">
                         <barButtonItem key="backBarButtonItem" title="Back" id="Z4L-Gb-msH"/>
@@ -49,9 +67,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TWx-8j-lqI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="154" y="14"/>
+            <point key="canvasLocation" x="152.80000000000001" y="13.943028485757123"/>
         </scene>
-        <!--View Controller-->
+        <!--New Submission-->
         <scene sceneID="jYw-AZ-XDo">
             <objects>
                 <viewController id="J4H-Z1-kPN" sceneMemberID="viewController">
@@ -62,15 +80,13 @@
                     <view key="view" contentMode="scaleToFill" id="Vz5-6b-sug">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" title="New Submission" id="9e1-ds-tVx"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sJz-v1-FGl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="970" y="14"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="Back" width="16" height="16"/>
-    </resources>
 </document>
