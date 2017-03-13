@@ -96,7 +96,7 @@
 				TargetAttributes = {
 					AF0EE5BD1E771AC20036E3F8 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 48WGY8KFKT;
+						DevelopmentTeam = 4Z8CKPY35P;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -261,7 +261,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 48WGY8KFKT;
+				DEVELOPMENT_TEAM = 4Z8CKPY35P;
 				INFOPLIST_FILE = "Oblique Advice/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Lukemorse.Oblique-Advice";
@@ -274,7 +274,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 48WGY8KFKT;
+				DEVELOPMENT_TEAM = 4Z8CKPY35P;
 				INFOPLIST_FILE = "Oblique Advice/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Lukemorse.Oblique-Advice";
