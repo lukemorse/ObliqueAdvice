@@ -53,9 +53,8 @@ class ViewController: UIViewController {
     }
 
     @IBAction func sliderChanged(_ sender: UISlider) {
-        
-        print(sender.value)
-        freqLabel.text = "\(sender.value)"
+        let idx = Int(sender.value * Float(freqIntervals.count))
+        freqLabel.text = freqIntervals[idx]
     }
     
 }
