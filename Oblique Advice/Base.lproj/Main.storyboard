@@ -14,17 +14,48 @@
         <scene sceneID="gX5-MZ-Me2">
             <objects>
                 <navigationController id="jtR-l0-5RT" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="LTm-E2-VGX">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="LTm-E2-VGX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="3qQ-Ck-4Vo" kind="relationship" relationship="rootViewController" id="1mo-Tl-87R"/>
+                        <segue destination="3R5-YK-RhM" kind="relationship" relationship="rootViewController" id="Q2a-h8-xS3"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Qx-vD-X4F" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-889" y="14"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="Uf8-td-D5X">
+            <objects>
+                <viewController id="3R5-YK-RhM" customClass="LoginViewController" customModule="Oblique_Advice" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="r2T-jh-QSZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ce1-fE-NHQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="O7v-sK-Enj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ryQ-fs-fYZ" customClass="GIDSignInButton">
+                                <rect key="frame" x="87" y="304" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="aVw-2M-sPO">
+                        <barButtonItem key="backBarButtonItem" title="Log Off" id="0hZ-Vk-Nu0"/>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="3qQ-Ck-4Vo" kind="show" id="7MY-IZ-JPx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qrc-il-8ht" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="51" y="14"/>
         </scene>
         <!--Oblique Advice-->
         <scene sceneID="0jD-D3-Tqv">
@@ -82,7 +113,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TWx-8j-lqI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="152.17391304347828" y="13.858695652173914"/>
+            <point key="canvasLocation" x="961" y="14"/>
         </scene>
         <!--New Submission-->
         <scene sceneID="jYw-AZ-XDo">
@@ -101,7 +132,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sJz-v1-FGl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="970" y="14"/>
+            <point key="canvasLocation" x="1778" y="14"/>
         </scene>
     </scenes>
 </document>

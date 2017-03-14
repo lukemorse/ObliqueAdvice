@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6715DC1AADDEC9D93A3A29A93AF9E17F"
+               BlueprintIdentifier = "B1F179EADB71BEED314FFFB08929CB7C"
                BuildableName = "Pods_Oblique_Advice.framework"
                BlueprintName = "Pods-Oblique Advice"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6715DC1AADDEC9D93A3A29A93AF9E17F"
+            BlueprintIdentifier = "B1F179EADB71BEED314FFFB08929CB7C"
             BuildableName = "Pods_Oblique_Advice.framework"
             BlueprintName = "Pods-Oblique Advice"
             ReferencedContainer = "container:Pods.xcodeproj">
