@@ -11,6 +11,8 @@ import UserNotifications
 
 class ViewController: UIViewController {
 
+    @IBOutlet var freqLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -50,5 +52,11 @@ class ViewController: UIViewController {
         scheduleLocal()
     }
 
+    @IBAction func sliderChanged(_ sender: UISlider) {
+        
+        print(sender.value)
+        freqLabel.text = "\(sender.value)"
+    }
+    
 }
 
