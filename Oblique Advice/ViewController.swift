@@ -13,7 +13,8 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        registerLocal()
     }
 
     func registerLocal() {
@@ -24,6 +25,7 @@ class ViewController: UIViewController {
                 print("auth succeeded")
             } else {
                 print("auth failed")
+                print(error.debugDescription)
             }
         }
     }
@@ -36,16 +38,12 @@ class ViewController: UIViewController {
         content.categoryIdentifier = "alarm"
         content.sound = UNNotificationSound.default()
         
-        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 10, repeats: false)
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
         
         let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
         
         center.add(request)
         
-    }
-
-    @IBAction func regLocalButtonPressed(_ sender: Any) {
-        registerLocal()
     }
     
     @IBAction func schedLocalButtonPressed(_ sender: Any) {
