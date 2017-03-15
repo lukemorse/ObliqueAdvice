@@ -11,36 +11,31 @@ import GoogleSignIn
 
 class LoginViewController: UIViewController, GIDSignInUIDelegate {
 
+    @IBOutlet var googleSignInButton: GIDSignInButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         GIDSignIn.sharedInstance().uiDelegate = self
-        GIDSignIn.sharedInstance().signIn()
+        GIDSignIn.sharedInstance().signInSilently()
     }
     
     override func viewDidAppear(_ animated: Bool) {
         GIDSignIn.sharedInstance().uiDelegate = self
     }
-    
-    func signIn(signIn: GIDSignIn!, didSignInForUser user: GIDGoogleUser!,
-                withError error: NSError!) {
-        if (error == nil) {
-            // Perform any operations on signed in user here.
-            // ...
-        } else {
-            print("\(error.localizedDescription)")
-        }
-    }
 
     func sign(_ signIn: GIDSignIn!,
               present viewController: UIViewController!) {
         self.present(viewController, animated: true, completion: nil)
+        print("did sign in 1")
     }
     
     // Dismiss the "Sign in with Google" view
     func sign(_ signIn: GIDSignIn!,
               dismiss viewController: UIViewController!) {
         self.dismiss(animated: true, completion: nil)
+        print("did sign in 2")
+        performSegue(withIdentifier: "loginSuccessful", sender: nil)
     }
     
     //completed sign In
@@ -54,6 +49,8 @@ class LoginViewController: UIViewController, GIDSignInUIDelegate {
             let givenName = user.profile.givenName
             let familyName = user.profile.familyName
             let email = user.profile.email
+            
+            print("did sign in 3")
             // ...
         } else {
             print("\(error.localizedDescription)")
