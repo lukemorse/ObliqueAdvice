@@ -16,6 +16,7 @@
 		AF0EE5D41E78627B0036E3F8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0EE5D31E78627B0036E3F8 /* Constants.swift */; };
 		AF0EE5D61E7869550036E3F8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AF0EE5D51E7869550036E3F8 /* GoogleService-Info.plist */; };
 		AF0EE5D81E7882150036E3F8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0EE5D71E7882150036E3F8 /* LoginViewController.swift */; };
+		AF3607211E7B1060006FCA72 /* NewSubmissionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3607201E7B1060006FCA72 /* NewSubmissionVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		AF0EE5D31E78627B0036E3F8 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		AF0EE5D51E7869550036E3F8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AF0EE5D71E7882150036E3F8 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		AF3607201E7B1060006FCA72 /* NewSubmissionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewSubmissionVC.swift; sourceTree = "<group>"; };
 		CE9814655D64A633A8FAE617 /* Pods_Oblique_Advice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Oblique_Advice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -75,9 +77,8 @@
 		AF0EE5C01E771AC20036E3F8 /* Oblique Advice */ = {
 			isa = PBXGroup;
 			children = (
+				AF36071F1E7B0FB6006FCA72 /* Controller */,
 				AF0EE5C11E771AC20036E3F8 /* AppDelegate.swift */,
-				AF0EE5C31E771AC20036E3F8 /* ViewController.swift */,
-				AF0EE5D71E7882150036E3F8 /* LoginViewController.swift */,
 				AF0EE5C51E771AC20036E3F8 /* Main.storyboard */,
 				AF0EE5D31E78627B0036E3F8 /* Constants.swift */,
 				AF0EE5C81E771AC20036E3F8 /* Assets.xcassets */,
@@ -86,6 +87,16 @@
 				AF0EE5D51E7869550036E3F8 /* GoogleService-Info.plist */,
 			);
 			path = "Oblique Advice";
+			sourceTree = "<group>";
+		};
+		AF36071F1E7B0FB6006FCA72 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AF0EE5C31E771AC20036E3F8 /* ViewController.swift */,
+				AF0EE5D71E7882150036E3F8 /* LoginViewController.swift */,
+				AF3607201E7B1060006FCA72 /* NewSubmissionVC.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 		F757542A61A34C08879926C6 /* Pods */ = {
@@ -224,6 +235,7 @@
 			files = (
 				AF0EE5D81E7882150036E3F8 /* LoginViewController.swift in Sources */,
 				AF0EE5C41E771AC20036E3F8 /* ViewController.swift in Sources */,
+				AF3607211E7B1060006FCA72 /* NewSubmissionVC.swift in Sources */,
 				AF0EE5C21E771AC20036E3F8 /* AppDelegate.swift in Sources */,
 				AF0EE5D41E78627B0036E3F8 /* Constants.swift in Sources */,
 			);

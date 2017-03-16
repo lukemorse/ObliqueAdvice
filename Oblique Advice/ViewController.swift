@@ -8,15 +8,24 @@
 
 import UIKit
 import UserNotifications
+import Firebase
+import FirebaseDatabase
 
 class ViewController: UIViewController {
+    var hasNotificationScheduled: Bool?
+    var ref: FIRDatabaseReference!
 
     @IBOutlet var freqLabel: UILabel!
     
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        ref = FIRDatabase.database().reference()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         registerLocal()
+        scheduleLocal()
     }
 
     func registerLocal() {
@@ -48,12 +57,13 @@ class ViewController: UIViewController {
         
     }
     
-    @IBAction func schedLocalButtonPressed(_ sender: Any) {
-        scheduleLocal()
+    func getNextAlertString() {
+        
+        
     }
 
     @IBAction func sliderChanged(_ sender: UISlider) {
-        let idx = Int(sender.value * Float(freqIntervals.count))
+        let idx = Int(sender.value * Float(freqIntervals.count - 1))
         freqLabel.text = freqIntervals[idx]
     }
     

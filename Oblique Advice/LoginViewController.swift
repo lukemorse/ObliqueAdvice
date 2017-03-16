@@ -15,9 +15,14 @@ class LoginViewController: UIViewController, GIDSignInUIDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if GIDSignIn.sharedInstance().hasAuthInKeychain() {
+            performSegue(withIdentifier: "loginSuccessful", sender: nil)
+        }
 
         GIDSignIn.sharedInstance().uiDelegate = self
         GIDSignIn.sharedInstance().signInSilently()
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {

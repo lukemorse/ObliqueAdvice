@@ -10,7 +10,7 @@ target 'Oblique Advice' do
 pod 'Firebase/Core'
 pod 'FirebaseUI', '~> 3.0' 
 pod 'FirebaseUI/Auth'
-
+pod ‘Firebase/Database'
 pod 'FirebaseUI/Google'
 pod 'FirebaseUI/Facebook'
 pod 'FirebaseUI/Twitter'
