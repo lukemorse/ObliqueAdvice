@@ -77,50 +77,48 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="r0u-To-Rsn">
-                                <rect key="frame" x="58" y="313.33333333333326" width="299" height="281.66666666666674"/>
-                                <connections>
-                                    <action selector="sliderChanged:" destination="3qQ-Ck-4Vo" eventType="valueChanged" id="aJS-yC-wKY"/>
-                                </connections>
-                            </slider>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jWJ-rW-rQb">
-                                <rect key="frame" x="138" y="480" width="139" height="57"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is the current piece of advice" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="92R-tP-OyB">
-                                <rect key="frame" x="50" y="116.99999999999999" width="314" height="81.666666666666643"/>
-                                <color key="backgroundColor" red="1" green="0.71574961883669519" blue="0.068953361096225518" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="35"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="How often do you want advice?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ziG-mw-iLs">
-                                <rect key="frame" x="132" y="375" width="150" height="69"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="ORB-aY-gPm">
+                                <rect key="frame" x="40" y="84" width="334" height="532"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" verticalCompressionResistancePriority="749" text="This is the most recent piece of advice." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="I5D-Ea-0vj">
+                                        <rect key="frame" x="0.0" y="0.0" width="334" height="401.33333333333331"/>
+                                        <color key="backgroundColor" red="1" green="0.61450520333300251" blue="0.093372762478712512" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="35"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How often do you want advice?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fw7-fM-gCY">
+                                        <rect key="frame" x="0.0" y="421.33333333333337" width="334" height="20.333333333333314"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Every day" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nme-1j-UjD">
+                                        <rect key="frame" x="0.0" y="461.66666666666663" width="334" height="20.333333333333371"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="nFe-e7-gIn">
+                                        <rect key="frame" x="-2" y="502" width="338" height="31"/>
+                                        <connections>
+                                            <action selector="sliderChanged:" destination="3qQ-Ck-4Vo" eventType="valueChanged" id="5bd-p3-ov4"/>
+                                        </connections>
+                                    </slider>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="r0u-To-Rsn" firstAttribute="leading" secondItem="iSk-OV-q0u" secondAttribute="leadingMargin" constant="40" id="4we-j9-1lh"/>
-                            <constraint firstItem="92R-tP-OyB" firstAttribute="top" secondItem="e9j-yH-tst" secondAttribute="bottom" constant="53" id="4y8-ln-g1z"/>
-                            <constraint firstItem="jWJ-rW-rQb" firstAttribute="top" secondItem="ziG-mw-iLs" secondAttribute="bottom" constant="8" id="8bQ-ST-eqN"/>
-                            <constraint firstItem="tMG-L9-hdr" firstAttribute="top" secondItem="r0u-To-Rsn" secondAttribute="bottom" constant="142" id="Eu5-bd-d8m"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="92R-tP-OyB" secondAttribute="trailing" constant="30" id="Ngk-cv-WYv"/>
-                            <constraint firstItem="r0u-To-Rsn" firstAttribute="top" secondItem="jWJ-rW-rQb" secondAttribute="bottom" constant="27" id="O8K-Da-aEm"/>
-                            <constraint firstItem="92R-tP-OyB" firstAttribute="leading" secondItem="iSk-OV-q0u" secondAttribute="leadingMargin" constant="30" id="br8-mD-9H3"/>
-                            <constraint firstItem="jWJ-rW-rQb" firstAttribute="centerX" secondItem="iSk-OV-q0u" secondAttribute="centerX" id="d7p-pj-ayh"/>
-                            <constraint firstItem="r0u-To-Rsn" firstAttribute="centerX" secondItem="iSk-OV-q0u" secondAttribute="centerX" id="g7Z-1m-Gwk"/>
-                            <constraint firstItem="ziG-mw-iLs" firstAttribute="top" secondItem="92R-tP-OyB" secondAttribute="bottom" constant="30" id="gYS-lU-ixf"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="r0u-To-Rsn" secondAttribute="trailing" constant="39" id="wJB-HM-nGL"/>
-                            <constraint firstItem="ziG-mw-iLs" firstAttribute="centerX" secondItem="iSk-OV-q0u" secondAttribute="centerX" id="wpW-mo-JPe"/>
+                            <constraint firstItem="ORB-aY-gPm" firstAttribute="top" secondItem="e9j-yH-tst" secondAttribute="bottom" constant="20" id="74Q-gj-zbN"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ORB-aY-gPm" secondAttribute="trailing" constant="20" id="CPs-dY-m8Q"/>
+                            <constraint firstItem="tMG-L9-hdr" firstAttribute="top" secondItem="ORB-aY-gPm" secondAttribute="bottom" constant="120" id="MH7-ED-uCs"/>
+                            <constraint firstItem="ORB-aY-gPm" firstAttribute="leading" secondItem="iSk-OV-q0u" secondAttribute="leadingMargin" constant="20" id="aYL-ZJ-zRB"/>
+                            <constraint firstItem="ORB-aY-gPm" firstAttribute="centerX" secondItem="iSk-OV-q0u" secondAttribute="centerX" id="ntP-ld-o2n"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Oblique Advice" id="f9c-Tb-ZXh">
-                        <barButtonItem key="backBarButtonItem" title="Back" id="Z4L-Gb-msH"/>
+                        <barButtonItem key="backBarButtonItem" title="Cancel" id="Z4L-Gb-msH"/>
                         <barButtonItem key="rightBarButtonItem" title="Submit" id="stf-uq-nnl">
                             <connections>
                                 <segue destination="J4H-Z1-kPN" kind="show" id="qel-mj-2bI"/>
@@ -128,7 +126,8 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="freqLabel" destination="jWJ-rW-rQb" id="Vw5-Xm-lfA"/>
+                        <outlet property="currentAdviceLabel" destination="I5D-Ea-0vj" id="H0p-pt-Fc6"/>
+                        <outlet property="freqLabel" destination="Nme-1j-UjD" id="BLC-rJ-gIe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TWx-8j-lqI" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -147,24 +146,49 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" keyboardDismissMode="interactive" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="gEm-EF-apD">
-                                <rect key="frame" x="87" y="304" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="ube-Yu-MeM">
+                                <rect key="frame" x="40" y="84" width="334" height="452"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Give some helpful advice to your neighbor!" translatesAutoresizingMaskIntoConstraints="NO" id="5YR-Rh-wyT">
+                                        <rect key="frame" x="0.0" y="0.0" width="334" height="128"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RGh-Nv-7F4">
+                                        <rect key="frame" x="0.0" y="148" width="334" height="304"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="onLowerSubmitButtonPressed:" destination="J4H-Z1-kPN" eventType="touchUpInside" id="foR-j2-VZF"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ube-Yu-MeM" firstAttribute="top" secondItem="E16-4q-A5K" secondAttribute="bottom" constant="20" id="75u-FN-ozc"/>
+                            <constraint firstItem="ube-Yu-MeM" firstAttribute="centerX" secondItem="Vz5-6b-sug" secondAttribute="centerX" id="C9k-G0-Px3"/>
+                            <constraint firstItem="79E-mD-b9n" firstAttribute="top" secondItem="ube-Yu-MeM" secondAttribute="bottom" constant="200" id="RDJ-rv-b1y"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ube-Yu-MeM" secondAttribute="trailing" constant="20" id="goN-V1-vz4"/>
+                            <constraint firstItem="ube-Yu-MeM" firstAttribute="leading" secondItem="Vz5-6b-sug" secondAttribute="leadingMargin" constant="20" id="jW4-vS-YAd"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="New Submission" id="9e1-ds-tVx"/>
+                    <navigationItem key="navigationItem" title="New Submission" id="9e1-ds-tVx">
+                        <barButtonItem key="rightBarButtonItem" title="Submit" id="9NL-Qf-ESD">
+                            <connections>
+                                <action selector="onSubmitButtonPressed:" destination="J4H-Z1-kPN" id="U40-Vr-hma"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
-                        <outlet property="textField" destination="gEm-EF-apD" id="1Kr-wQ-o9b"/>
+                        <outlet property="onLowerSubmitButtonPressed" destination="RGh-Nv-7F4" id="P3O-hE-Xjb"/>
+                        <outlet property="textField" destination="5YR-Rh-wyT" id="ArW-5z-aYC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sJz-v1-FGl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1778" y="14"/>
+            <point key="canvasLocation" x="1776.8115942028987" y="13.858695652173914"/>
         </scene>
     </scenes>
 </document>

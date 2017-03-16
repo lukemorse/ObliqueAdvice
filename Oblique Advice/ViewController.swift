@@ -16,6 +16,7 @@ class ViewController: UIViewController {
     var ref: FIRDatabaseReference!
 
     @IBOutlet var freqLabel: UILabel!
+    @IBOutlet var currentAdviceLabel: UILabel!
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -26,6 +27,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         registerLocal()
         scheduleLocal()
+        print("HERE IS THE VIEW CONTROLLER !!!!!!!!!!!!!!!!!")
     }
 
     func registerLocal() {
